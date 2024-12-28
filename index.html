@@ -54,7 +54,7 @@
       }
 
       const response = await fetch(`http://localhost:3000/search?query=${query}`);
-      const data = await response.json();
+      const data = await server.json();
 
       const resultsDiv = document.getElementById('results');
       resultsDiv.innerHTML = '';
